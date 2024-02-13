@@ -1,0 +1,17 @@
+AFRAME.registerComponent("createbuttons", {
+    init: function() {
+      var button1 = document.createElement("button");
+      button1.innerHTML = "ORDER NOW";
+      button1.setAttribute("id", "orderbutton");
+      button1.setAttribute("class", "btn btn-danger ml-3 mr-3");
+  
+      var button2 = document.createElement("button");
+      button2.innerHTML = "RATE US";
+      button2.setAttribute("id", "ratingbutton");
+      button2.setAttribute("class", "btn btn-danger ml-3");
+  
+      var buttonDiv = document.getElementById("button-div");
+      buttonDiv.appendChild(button2);
+      buttonDiv.appendChild(button1);
+    }
+  });
